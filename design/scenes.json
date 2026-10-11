@@ -1,0 +1,101 @@
+{
+  "_doc": "The chapter, one row per scene, played in order. bg = a Katawa Shoujo background tag ('bg <name>'), music = a KS music alias (store.music_<alias>), present = characters on screen in the order they react to camo changes (first one reacts). ops: ['say', who, expr|null, text] | ['n', text] | ['show', who, expr, xpos 'left'|'center'|'right'|'twoleft'|'tworight'] | ['hide', who] | ['present', [who,...]] | ['codec', call_id] | ['sfx', ks_sfx_name] | ['hint', text] | ['pause', seconds]",
+  "rows": [
+    {"id": "s01_insertion", "title": "Virtuous Mission", "bg": "op_snowywoods", "music": "tension", "present": [], "ops": [
+      ["n", "1964. Somewhere beyond the Iron Curtain, in a closed city the maps call \"Yamakugrad\"."],
+      ["n", "A parachute opens over a snowy forest. The man under it has a bandana, a knife, and a forged transfer certificate in the name of one Hisao Nakai."],
+      ["codec", "c01_briefing"],
+      ["n", "Snake stows the parachute under a pine and checks the certificate. \"Heart condition. Arrhythmia.\" Convenient. Nobody asks a sick boy too many questions."],
+      ["hint", "Press C (or the CAMO button) at any time to change camouflage. Whoever you're talking to will notice."]
+    ]},
+    {"id": "s02_gate", "title": "Transfer Student", "bg": "school_gate", "music": "normal", "present": [], "ops": [
+      ["n", "The school gate looks exactly like a Japanese boarding school. That is the first thing that's wrong with it."],
+      ["n", "The second is the hammer and sickle worked very subtly into the ironwork. The third is the wheelchair ramp. It is beautiful. It is gold-leafed."],
+      ["say", "snake", null, "...A ramp. Out here."],
+      ["codec", "c02_ramp"]
+    ]},
+    {"id": "s03_hallway", "title": "The Sign", "bg": "school_hallway3", "music": "shizune", "present": ["shizune", "misha"], "ops": [
+      ["show", "shizune", "neutral", "twoleft"],
+      ["show", "misha", "neutral", "tworight"],
+      ["say", "misha", "neutral", "Ah! You must be the new transfer student, Hicchan~! I'm Misha, and this is Shicchan, our class rep!"],
+      ["say", "shizune", "neutral", "[[ You are late. Transfer students are never late. Spies are late. ]"],
+      ["say", "misha", "happy", "Shicchan says, \"Welcome!\" Wahahaha~!"],
+      ["say", "snake", null, "That's not what her hands said."],
+      ["say", "shizune", "shock", "[[ You read sign language? ]"],
+      ["n", "Snake reads a lot of things. Codebooks. Body language. The fact that Misha's \"translation\" just skipped forty words."],
+      ["say", "misha", "neutral", "Hicchan, Shicchan wants to know if you'd like to join the student council~! We do a lot of very normal school things! Like budgets!"],
+      ["say", "shizune", "happy", "[[ Very large budgets. For other countries. ]"],
+      ["say", "snake", null, "I'll think about it."],
+      ["hide", "shizune"], ["hide", "misha"]
+    ]},
+    {"id": "s04_classroom", "title": "Instructor Mutovich", "bg": "school_scienceroom", "music": "daily", "present": ["mutou"], "ops": [
+      ["show", "mutou", "neutral", "center"],
+      ["say", "mutou", "neutral", "Class, this is Hisao Nakai. He has a heart condition, so please do not startle him."],
+      ["say", "mutou", "neutral", "Today we continue our unit on \"Infrastructure of the Capitalist West, and its Weaknesses\". Turn to page 1990."],
+      ["n", "Page 1990 is a diagram of an American bus. Someone has drawn a lift on the back of it in red crayon and written \"SOON\"."],
+      ["say", "snake", null, "Page 1990..."],
+      ["say", "mutou", "happy", "A very important year, Nakai. You'll see."],
+      ["hide", "mutou"]
+    ]},
+    {"id": "s05_track", "title": "The Stride", "bg": "school_track", "music": "emi", "present": ["emi"], "ops": [
+      ["sfx", "emirunning"],
+      ["n", "Something hits Snake at roughly the speed of a Soviet motorcycle. He rolls with it, the way they taught him. The something does not roll. The something bounces."],
+      ["show", "emi", "angry", "center"],
+      ["say", "emi", "angry", "Ow! Watch where you're standing! This is a running track, not a standing track!"],
+      ["say", "snake", null, "You came out of nowhere."],
+      ["say", "emi", "happy", "That's kind of my whole thing! Emi Ibarazaki, fastest legs in the Union. Both of them carbon fibre."],
+      ["say", "emi", "neutral", "Our coach says the Americans will pay a fortune to make every pavement in their country flat enough for me. Every. Single. One."],
+      ["say", "snake", null, "Why would they do that?"],
+      ["say", "emi", "happy", "Because it's the right thing to do, silly! That's what makes it such a good plan."],
+      ["hide", "emi"],
+      ["codec", "c03_paramedic"]
+    ]},
+    {"id": "s06_library", "title": "The Whisper and The Braille", "bg": "school_library", "music": "hanako", "present": ["hanako", "lilly"], "ops": [
+      ["show", "hanako", "neutral", "twoleft"],
+      ["n", "The library is quiet. A purple-haired girl is reading a thick book titled \"Building Codes of the United States, Annotated\". She has annotated it in very small, very neat handwriting."],
+      ["say", "hanako", "neutral", "O-oh. H-hello. I'm... Hanako. I don't... usually talk to... people who walk that quietly."],
+      ["show", "lilly", "neutral", "tworight"],
+      ["say", "lilly", "neutral", "There you are, Hanako. And you've brought someone. Footsteps like that... military, I'd say. Or a cat."],
+      ["say", "lilly", "happy", "Lilly Satou. Head of the class 3-3 reading committee. And of a few other committees."],
+      ["say", "snake", null, "What are you reading?"],
+      ["say", "lilly", "neutral", "Braille signage regulations, for every elevator in Washington D.C. Do you know how many elevators that is, Mr. Nakai?"],
+      ["say", "hanako", "happy", "Th-thousands. Each one needs... raised numbers. Every button. It will cost... so much."],
+      ["say", "lilly", "happy", "Hanako is our accountant. She is very good at large numbers."],
+      ["hide", "hanako"], ["hide", "lilly"]
+    ]},
+    {"id": "s07_roof", "title": "The Brush", "bg": "school_roof", "music": "rin", "present": ["rin"], "ops": [
+      ["show", "rin", "neutral", "center"],
+      ["n", "On the roof, a girl with no arms is painting with her feet. The painting is enormous. The painting is a ramp."],
+      ["say", "rin", "neutral", "You're standing in my light, but it's okay, because you're the kind of shadow I wanted."],
+      ["say", "snake", null, "What is that?"],
+      ["say", "rin", "neutral", "It's a mural. Or a blueprint. They told me to paint a blueprint and I said I only paint murals, so we agreed it's both."],
+      ["say", "rin", "happy", "It's a ramp at a one-to-twelve slope. If you build a million of them, a country gets very tired."],
+      ["say", "snake", null, "...Who told you to paint it?"],
+      ["say", "rin", "neutral", "The student council. The blueprints are in their room. In a drawer marked \"NOT BLUEPRINTS\"."],
+      ["hide", "rin"],
+      ["codec", "c04_zero_plan"]
+    ]},
+    {"id": "s08_council", "title": "Snake Eater", "bg": "school_council_ni", "music": "drama", "present": [], "ops": [
+      ["sfx", "door_creak"],
+      ["n", "Night. The student council room. Snake moves between the desks like he was never there."],
+      ["n", "The drawer marked \"NOT BLUEPRINTS\" contains blueprints. A thousand pages. On the cover, in English: \"A BILL to establish a clear and comprehensive prohibition of discrimination on the basis of disability.\""],
+      ["say", "snake", null, "The Americans with Disabilities Act... drafted in 1964. In Russian. With footnotes."],
+      ["codec", "c05_cliffhanger"],
+      ["sfx", "switch"],
+      ["n", "The lights come on."],
+      ["present", ["shizune", "misha", "emi", "hanako", "lilly", "rin"]],
+      ["show", "shizune", "happy", "center"],
+      ["say", "shizune", "happy", "[[ Good evening, Nakai. Or should I say... Snake. ]"],
+      ["show", "misha", "happy", "right"],
+      ["say", "misha", "happy", "Shicchan says she read your file! And your lips! Wahahaha~!"],
+      ["show", "emi", "happy", "left"],
+      ["say", "emi", "happy", "Told you I'm fast. I beat you here by six minutes."],
+      ["say", "lilly", "neutral", "We heard you come in. Well, I did."],
+      ["say", "hanako", "neutral", "W-we've... been expecting you... for twenty-six years. Th-that's how long... the plan takes."],
+      ["say", "rin", "neutral", "I painted you into the mural already. You're the man at the bottom of the ramp, looking up."],
+      ["say", "shizune", "happy", "[[ The Cobra Unit is retired. Meet the Kerb Unit. ]"],
+      ["say", "snake", null, "Kept you waiting, huh?"],
+      ["n", "To be continued."]
+    ]}
+  ]
+}

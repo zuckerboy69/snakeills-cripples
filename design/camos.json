@@ -1,0 +1,13 @@
+{
+  "_doc": "One row per camo Snake can switch to with the C key. mgs_asset is a key in mgs_assets.json (the uniform's icon read from the player's MGS Delta install). Order is the picker order.",
+  "rows": [
+    {"id": "olive_drab",   "name": "Olive Drab",   "mgs_asset": "camo_icon_olive_drab",   "blurb": "Standard issue fatigues. Says 'soldier' in every language.", "default": true},
+    {"id": "tiger_stripe", "name": "Tiger Stripe", "mgs_asset": "camo_icon_tiger_stripe", "blurb": "Jungle stripes. Very loud in a classroom.", "default": false},
+    {"id": "leaf",         "name": "Leaf",         "mgs_asset": "camo_icon_leaf",         "blurb": "Foliage pattern. Perfect for the school gardens.", "default": false},
+    {"id": "splitter",     "name": "Splitter",     "mgs_asset": "camo_icon_splitter",     "blurb": "Angular brown splinters. Looks like a modern art piece.", "default": false},
+    {"id": "raindrop",     "name": "Raindrop",     "mgs_asset": "camo_icon_raindrop",     "blurb": "East German rain pattern. Suspiciously local.", "default": false},
+    {"id": "snow",         "name": "Snow",         "mgs_asset": "camo_icon_snow",         "blurb": "All white. Disappears against a hospital wall.", "default": false},
+    {"id": "tuxedo",       "name": "Tuxedo",       "mgs_asset": "camo_icon_tuxedo",       "blurb": "A dinner jacket. For the ending of every spy film.", "default": false},
+    {"id": "naked",        "name": "Naked",        "mgs_asset": "camo_icon_naked",        "blurb": "Shirtless. Scars, pecs and a bandana.", "default": false}
+  ]
+}

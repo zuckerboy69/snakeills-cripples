@@ -1,0 +1,14 @@
+{
+  "_doc": "One row per place the mod touches Katawa Shoujo. Each row is implemented by the named piece in mod/snake_eater/sk_core.rpy. ks_source = where the hook was confirmed (KS: Re-Engineered source, game/*.rpy). verified_in_game = seen working in a running copy.",
+  "rows": [
+    {"id": "mods_menu_entry", "what": "Adds 'Snake Eater: Operation Long Ramp' to KS's Mods menu; picking it starts label snake_eater", "ks_symbol": "mods (dict, definitions.rpy python early); screen mods -> Start(lbl)", "implemented_by": "init 10 python: mods['snake_eater']", "ks_source": "definitions.rpy:16, screens.rpy:1252", "verified_in_game": false},
+    {"id": "characters", "what": "Girls speak through KS's own Character objects", "ks_symbol": "emi, ha, li, rin, shi, mi, mu", "implemented_by": "sk_char()", "ks_source": "definitions.rpy:824-842", "verified_in_game": false},
+    {"id": "sprites", "what": "Sprites are KS's own '<tag> <pose_expr>' images built from sprites/<char>/", "ks_symbol": "make_sprites()", "implemented_by": "sk_show()", "ks_source": "images.rpy:53-90", "verified_in_game": false},
+    {"id": "backgrounds", "what": "Backgrounds are KS's own 'bg <file>' images built from bgs/", "ks_symbol": "images.rpy loop over bgs/", "implemented_by": "sk_scene()", "ks_source": "images.rpy:73", "verified_in_game": false},
+    {"id": "music", "what": "Music plays KS's own tracks by alias", "ks_symbol": "store.music_<alias>", "implemented_by": "sk_music()", "ks_source": "ost.rpy:10-52", "verified_in_game": false},
+    {"id": "sfx", "what": "Sound effects play KS's own sfx/ files", "ks_symbol": "sfx/<name>.ogg", "implemented_by": "sk_sfx()", "ks_source": "game/sfx listing", "verified_in_game": false},
+    {"id": "camo_picker", "what": "C key / CAMO button opens the camo picker during any line; the reaction plays in a new context, then the interrupted line resumes", "ks_symbol": "renpy.call_in_new_context", "implemented_by": "screen sk_hud, label sk_camo_picker", "ks_source": "Ren'Py API", "verified_in_game": false},
+    {"id": "codec", "what": "Codec calls overlay KS's text box with MGS Delta's codec portraits and sounds", "ks_symbol": "screen sk_codec", "implemented_by": "label sk_codec", "ks_source": "Ren'Py API", "verified_in_game": false},
+    {"id": "mgs_bridge", "what": "Finds the player's MGS Delta folder (SK_MGS_DIR from Melty) and the extracted cache; never ships MGS files", "ks_symbol": "os.environ", "implemented_by": "sk_mgs_file()", "ks_source": "n/a", "verified_in_game": false}
+  ]
+}

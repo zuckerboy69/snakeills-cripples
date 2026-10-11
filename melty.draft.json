@@ -1,0 +1,15 @@
+{
+  "_status": "DRAFT - not yet checked by Melty (validate_recipe / one_click_check). Game slugs are placeholders until search_games runs on a PC that has both games. Rename to melty.json once validated.",
+  "games": [
+    {"slug": "custom-katawa-shoujo", "role": "primary"},
+    {"slug": "custom-metal-gear-solid-delta-snake-eater", "role": "companion"}
+  ],
+  "components": [
+    {"fileName": "snake-eater-operation-long-ramp-*.zip", "install": [{"from": "snake_eater/", "to": "{game}/game/mods/snake_eater/"}]}
+  ],
+  "launch": {
+    "kind": "exe",
+    "exe": "{game}/Katawa Shoujo.exe",
+    "env": {"SK_MGS_DIR": "{game:custom-metal-gear-solid-delta-snake-eater}"}
+  }
+}

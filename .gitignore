@@ -1,0 +1,6 @@
+# Compiled Ren'Py scripts and the per-player MGS Delta cache never go in the repo or the upload.
+*.rpyc
+*.rpymc
+mod/snake_eater/mgs_cache/
+__pycache__/
+dist/

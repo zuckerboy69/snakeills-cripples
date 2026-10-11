@@ -1,0 +1,41 @@
+{
+  "_doc": "One row per codec call. The ring, open/close sounds and the contact's portrait come from the player's MGS Delta install (mgs_assets.json keys). lines: [speaker id, text].",
+  "rows": [
+    {"id": "c01_briefing", "contact": "zero", "freq": "140.85", "ring_asset": "codec_ring", "open_asset": "codec_open", "close_asset": "codec_close", "lines": [
+      ["zero", "Snake, this is Major Zero. Can you hear me?"],
+      ["snake", "Loud and clear. Why does this forest have a school in it?"],
+      ["zero", "That's your target. Yamaku Academy, a Soviet boarding school for students with disabilities. On paper."],
+      ["zero", "Intelligence says it's a front for a long-term infiltration program. Codename: Operation Long Ramp."],
+      ["snake", "What's the objective?"],
+      ["zero", "We don't know. That's the trouble. Whatever it is, Moscow has budgeted for it until 1990."],
+      ["zero", "You go in as Hisao Nakai, a transfer student. Make contact with the students. Find out what they're planning."],
+      ["snake", "Undercover at a school. In the snow. Got it."]
+    ]},
+    {"id": "c02_ramp", "contact": "zero", "freq": "140.85", "ring_asset": "codec_ring", "open_asset": "codec_open", "close_asset": "codec_close", "lines": [
+      ["snake", "Major. There's a ramp at the main gate. Gold leaf."],
+      ["zero", "A ramp? To what end?"],
+      ["snake", "...To the door."],
+      ["zero", "Remarkable. Photograph it if you can. Washington will want to know what it costs."]
+    ]},
+    {"id": "c03_paramedic", "contact": "paramedic", "freq": "145.73", "ring_asset": "codec_ring", "open_asset": "codec_open", "close_asset": "codec_close", "lines": [
+      ["paramedic", "Snake, it's Para-Medic. Zero told me you met a girl who runs on prosthetic legs?"],
+      ["snake", "She hit me at full speed. Felt like a jeep."],
+      ["paramedic", "Did you know there's a film where... no, never mind. Snake, these students aren't weak. They're adapted. Every one of them has learned to beat a world that wasn't built for them."],
+      ["paramedic", "If the Soviets have trained that into a spy program, they might be the most dangerous unit you've ever faced."],
+      ["snake", "Great."]
+    ]},
+    {"id": "c04_zero_plan", "contact": "zero", "freq": "140.85", "ring_asset": "codec_ring", "open_asset": "codec_open", "close_asset": "codec_close", "lines": [
+      ["snake", "Major, I think I understand the plan."],
+      ["zero", "Go on."],
+      ["snake", "They want the West to build ramps. Braille signs. Lifts on buses. Everywhere. All of it."],
+      ["zero", "Good Lord. The cost would be astronomical."],
+      ["snake", "...And the worst part is, it's a good idea."],
+      ["zero", "That's what makes it brilliant, Snake. Get those blueprints."]
+    ]},
+    {"id": "c05_cliffhanger", "contact": "zero", "freq": "140.85", "ring_asset": "codec_ring", "open_asset": "codec_open", "close_asset": "codec_close", "lines": [
+      ["snake", "Major, I've got them. It's legislation. An American law. They've written our law for us."],
+      ["zero", "Then the infiltration is already complete. Snake, get out of there. Now."],
+      ["snake", "Wait. Someone's—"]
+    ]}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "_doc": "One row per piece of METAL GEAR SOLID Δ: SNAKE EATER content the mashup reads from the player's own install (Melty passes its folder as SK_MGS_DIR). Nothing here is ever shipped: the bundled extractor reads source_path out of the player's paks on first launch and writes cache_file into the mod's local cache. source_path must be confirmed against a real install (verified=true) before release.",
+  "install": {"store_folder_name": null, "exe": null, "paks_dir": null, "engine": "Unreal Engine 5", "encrypted_paks": null, "verified": false},
+  "rows": [
+    {"key": "camo_icon_olive_drab",   "kind": "image", "used_by": "camos.olive_drab",   "source_path": null, "cache_file": "camo/olive_drab.png",   "verified": false},
+    {"key": "camo_icon_tiger_stripe", "kind": "image", "used_by": "camos.tiger_stripe", "source_path": null, "cache_file": "camo/tiger_stripe.png", "verified": false},
+    {"key": "camo_icon_leaf",         "kind": "image", "used_by": "camos.leaf",         "source_path": null, "cache_file": "camo/leaf.png",         "verified": false},
+    {"key": "camo_icon_splitter",     "kind": "image", "used_by": "camos.splitter",     "source_path": null, "cache_file": "camo/splitter.png",     "verified": false},
+    {"key": "camo_icon_raindrop",     "kind": "image", "used_by": "camos.raindrop",     "source_path": null, "cache_file": "camo/raindrop.png",     "verified": false},
+    {"key": "camo_icon_snow",         "kind": "image", "used_by": "camos.snow",         "source_path": null, "cache_file": "camo/snow.png",         "verified": false},
+    {"key": "camo_icon_tuxedo",       "kind": "image", "used_by": "camos.tuxedo",       "source_path": null, "cache_file": "camo/tuxedo.png",       "verified": false},
+    {"key": "camo_icon_naked",        "kind": "image", "used_by": "camos.naked",        "source_path": null, "cache_file": "camo/naked.png",        "verified": false},
+    {"key": "camo_change_sfx",        "kind": "sound", "used_by": "hooks.camo_picker",  "source_path": null, "cache_file": "sfx/camo_change.ogg",   "verified": false},
+    {"key": "codec_ring",             "kind": "sound", "used_by": "codec.*",            "source_path": null, "cache_file": "sfx/codec_ring.ogg",    "verified": false},
+    {"key": "codec_open",             "kind": "sound", "used_by": "codec.*",            "source_path": null, "cache_file": "sfx/codec_open.ogg",    "verified": false},
+    {"key": "codec_close",            "kind": "sound", "used_by": "codec.*",            "source_path": null, "cache_file": "sfx/codec_close.ogg",   "verified": false},
+    {"key": "codec_portrait_snake",   "kind": "image", "used_by": "characters.snake",   "source_path": null, "cache_file": "codec/snake.png",       "verified": false},
+    {"key": "codec_portrait_zero",    "kind": "image", "used_by": "characters.zero",    "source_path": null, "cache_file": "codec/zero.png",        "verified": false},
+    {"key": "codec_portrait_paramedic","kind": "image","used_by": "characters.paramedic","source_path": null, "cache_file": "codec/paramedic.png",  "verified": false}
+  ]
+}
